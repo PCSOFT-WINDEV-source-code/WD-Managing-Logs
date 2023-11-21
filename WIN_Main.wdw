@@ -1,0 +1,850 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Main
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Main
+ identifier : 0x26a5faae020c6313
+ internal_properties : CAAAAAgAAACBGLWFbU+rN5xHH/ILgvGGQmZemEXg2GM+u6c2Kvo/j/APQ8HZensPQaSl+Rwth/UfaM/Amq1L974/aeSkHKQHTxGbh6rzXT3wLqWTtmWKwSCpQkz1dFIQIMyfLE75qb2xVw5Xk27IaVaqxxvPQa2a49VIxsdrtPaxHy1mkH+bPAMj5XhpYUmK+B3wqAq35JpRS58UiKdLDSgkf3eDBTS+gEqZEtYwHU/98EfuAjTpz5+AqyDk2Od5VJzgvQwWhwkjshY3lkUKaBiKwAVUDJVepshqMC2RySUgmWOphs03ilmcg/BIPJYqEJ/pl/xuXs6msf00d/PVnUwGeW7JDcHhBp7QWTYg9BSmYxFK9LqcgPi+i296EG14OOcteI5pB2D893PQBdWY24cBrna53Y94+5OjC2luTMAQc6o8j5CKyHfwaXfm/W9PITZKTn0Nv1NHEi7+/capETiRA4LEVXA847LQ0Fy6pryk8hHJm+hSLB6r+bOQJKtRMEA1EgdIwnw75DktGKZhEW1FHyal6iBb2Nk8BdfhIJYkSbcjDJ/MJzBTrXmynOQra15a9VjxaeBeeS+ldwHZ78pRN8H/gD9bJDqIDv8QfxQD7t91PUrMyF1oLqZ6tVzwSVaD04fyU5eCzMleVRjDrF8wN8WZXdpLQei3O+LuVivr7uphhasF3V6Q2kSKBgWr7n9gZ/5tdh9HcJPbV1bns+etsJyM+i7LoNljHxDsVkEz9/xKKooFIQoq98Wub4s1mn03e7cPZOmtZcb3Nl0=
+ properties :
+  width : 786
+  height : 582
+  widthClient : 784
+  heightClient : 550
+ controls :
+  -
+    name : LIST_LOG_DeletedFiles
+    identifier : 0x26a5faae020d6313
+    internal_properties : CAAAAAgAAACpSDujKwoFSni5+6SzFV/OqNuzfQZRMBEYzXk5cNaMlRjhS5oXaxyF0ChlMnT2hwxGZJFKMWTA9OcNq3J6Jj/W79IzLsiKZAvganoq0H2l2kAjEJd7LBCWG1s9HezcPJSNKLJ+B6ozJS4iZv7FJ3TbfhRvMoLuKjDy0tkCXy2zMP32k3pbGk5iuFeacEtNMmy/BmExv3Qng0uwMe0p7kNccWc66MqPdexU+kVU5cHToT5gbnrCDkhUHQqesfWGS+I/gHrlzoifwhA/2kiAoCKZk9djlNgzn9A1QR0ebtT9yzTbxG4+OnsYGcbEPXprkntaY1fjvczMq0BLY6MGjSK5WA5K5yEGAvzcfSkZ33BqVdOhw8UAbjDbUM85fTILFw96JoI5b8S8Y8zgOuglHvTRfae8Cco54YXCc1/apaF3y5srm0M9vMArtFYslfuKZCRTfKf/y8visRFwKHoBMfxkiF8HNMVTEAp5ntaHMbicI6b66MM2C/P7n6AhKvpcutSVlApUvuhDxVXObgrK+LnSowr63b5hMoJhPn85PJUXyIZbikdd787jy/4JBHCbK9M/Z1b3blPQJENGoeqRn8zWtClufHeZWlAFnqTtXKEccD250x04/jcuHzEsLAEpA7oZXa+2f5/1WUqkThB+r3ZzNxHE2sbC/Mzg4ggfSd6aagQ0gvknQGo/M5NFxDofIaTjHLwK8hpVmgf7NrB9qgEtMI6+RAMVUIqggA7BAzLxMbT5DDg02KjBZiWnSimiQF8km7oBt7MMZcp8LVbwZILFJNwDlvWoYhQqPCnjQCYc6WwmloPBx53a0S7/En/MHPC2qKqiRHpwldDOnm6IcBxJcN/92QtTo0cA2IJDeedfEy4WfMiWh95YNU4BZKFLyfT8C6G1n2t4Vzw5E4FuBiPdNB3+SP3XhtgU2Zg7YD/GjmNk4RRpMjMhCdp0uJIr5B04n8tAT9+7NZgeAtuiopZ89IrtlXxCBYuy7poXCeZkMKxLolE=
+    properties :
+     x : 372
+     y : 457
+     width : 406
+     height : 87
+    type : 7
+    code_elements :
+     type_code : 7
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+  -
+    name : LIST_LOG_Files
+    identifier : 0x26a5faae020e6313
+    internal_properties : CAAAAAgAAADTAgo/cWSNcGI5DFi6ELUBQTO9mbYtC/xzoonU57tiwTItZt/ssXjosWfBl+vpbfMl6OC7Ac0EayeMx5CWxohWpPDPMb8IPtXXI0Rle4w5t5BW04w8JAqthGT4AvoGWB5Os/WxXcB1UaMvvFjukp6YvlWPPp7wBS0xAXBwxaChsrinSGQkWNmS3kmutG8s4bRv6sIF6UoaG6NhUQ/LAeUA0OiZlkOEFplOmmADdirWe011pKYLnyp0+aHXNuSwl1dzsd5yiSozLoIcoCRKrNmpZHqexEX3+NToFyX365c3eCYpJ5lXau5/1bOnV3k9dyZJPb04lqdKlgCpuk8ujiQZTn+ZuaJzAetc3GbC69JEin70sJSphaK4yJay32dIBj0xfF+JUVZ8SS8CHO6Rf6x3WxsGLue/MjKuXK0B5wWBQrO0mfWyt3GgGRR2cJWiNQxQSOwxvT4w4OJJHJwBLkkDcFmveUK6/IjnHkghYDHZkKZaVQQbXYRLZBee0tEwbuvMNVCksIcNwgat6lHdQgee+pf/saOF83J+Gy22dGzkbxBasNBKrENqbGnUqA/a+rl1JzB7fEEXjBeXpuhj90NtC8RocB40Rv+jt+OZAxcL/idWDXDdjcJpAuYa855oB/CcYFaWR/3liPWiGbwwdhgSaTAPY1yA9rn++PUk3KF8fDOBlFSWsj37eQf0IAxeJiMQqoUPeU5v6Wy6mdi/Z9xaDmiCBI1o2O+XFgF0wd2FgwvU5doliOamFCXkL8Ar22xL45JaetgvGZUkBMaMtDxk8uXduy/DkpmkR1Qm51eovGS/CDubbRXEh6xF5WAlP5mavnSehfSA4F5Luksf2K4cHGQ35k7vZuMRO4JVOS1t+t9B8qLx1WXSqxbUZJ3tjwJWq5XHvij1rUajDhzAXu9gyZpEWgNZNTaO4TkBzwm41E2yu4T8DBowst7cfNIOcK8MICCygiZ9sBDDFJ1qREfRo0XTmzVkphpNsJOuNtEazxBvn8kGXj0vm5SWpVYAPsTBSHTnA3jUWQ==
+    properties :
+     x : 372
+     y : 331
+     width : 406
+     height : 123
+    type : 7
+    code_elements :
+     type_code : 7
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+  -
+    name : BTN_TEST_Stop
+    identifier : 0x26a5faae020f6313
+    internal_properties : CAAAAAgAAACUXUu+6iOV9KW/Wm92ie0/zXrk4MojYOkX/3c5Oj5g0tNiooGOeFH3LfJb/b94gUtodS0qQhUcifgM+IdtNXi7D0JoQynyTX+KcqPGUBTiJ9HXfVCObUWipkhuauu1fNOAWT+PfMpkX7oqHcDe4TisOA6h9Fl6UVZRpY0zPp9vGDh/5pepUSSd43AS0Fo+H3d4TMg49G/cQ6017Y6oyFt4tVY4Cxpqxpxc8Zh0zLTmgYuQpdlYk6mC1Ym65ocuP3u0DiuKklPPVXL+4JQMC6ROFue5c2WVe2/cIHd3QtNKjqqri6U+lpeTJm9deSYTaUNinr2hrUK120Y73p1YQIPa4tTHl16/630zTi0xODfrAxScp67rKwdyQgGf6mfURucmLBJo71dfZfbrklKzic1YWQOCepDJRigBc/6OQ6/xpz7zaa6E+9NT2iM3Q/nvUA3eJilfBUInpEuK9NAOTzScxC1t4I6UOve0EVnPZY5zLglaLFfTuWDI4hIJrBw1i607/9EuwMzp4E6g2ITeSIMOHLdx0XGB1vv7aOiacQAcf9l0SEaEnnqYLAvnpmL8ZGg5p6MF9BF1uIfdD1CR573kSn76hfKA1spNLbs3QvQ500QZ03X9QAYxtBAOIqXnC5qzDl0NTY1Gbn6qupbdtUe+DWdWOIs1TqyUT/xOpcWN7UZTBtUVKXlppOJQh5Pyl6LDAvDSMsRXqKm8W162tN4PpBj9QyJjtBwiR6uVfVvRvDWpKkm1W7K+k26spwWRPXyGH8iKFf5fimWYkuTpjFEV3ggZcQIW/xHg010cQm8TmpYVFwUMRBtB6+yrRdfcztustmTwuHVSKNTJ2it4Db0s9J1UtJeXktRX/KAilTnhAgFYITXVDSMdZbTe6jfRbcjCM+KKVzQ8YgbShOVmZBdcGy8zTnZpNZIAEYp4MOgOT5OMAINBttraDtnoNL3Awa8+DJ3j8ecGby1c+gAPpirN8ftZuzEYvkqICdJdBy1BoLUQMSQmeZ2c
+    properties :
+     x : 372
+     y : 301
+     width : 151
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         // Confirm
+         //1: &Stop
+         //2: &Don't stop
+         SWITCH Dialog(<§?17FB22EA00371B2D§>)
+         	// &Stop
+         	CASE 1
+         		gbSimulation = False
+         		
+         	// &Don't stop
+         	CASE 2
+         		// No action
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_TEST_Run
+    identifier : 0x26a5faae02106313
+    internal_properties : CAAAAAgAAADRn6ab7ZXHzZ7GhwHRQ2BGSKxfIs7teBg37JVGdgBm5VQPKiRbwrMTdYc00P2GX7TAXFvQhGrQBnwU6KjxbZPlKlFQeRz33aBj9C3xw06nacbjr28bhUKTFuakzW9eFdHhQVvZ7V3KvU9X9uF/3ertM1qEFzG2s+4bPATnW4yWHPj7mzud0qs9oi0MimHUSVegCA6DE9yD9kGy5XAuwh4lcp71xgycplMERDYLWDyBhpZAmuhb3uahDITQnTMdT62/H0e1KvZzLy5/nU+VO1nzJqy0qq1pu4ZehlIWJoDkIVNA3quHCMArjynRXcqjEpHScnGhVt7cNoOMFWh/sAAJtqwBq/nS9ld7wrYYfJdiZOZM4CESV4AOtbh3DOxBPXNnoVWV9nKW9R4dHnG/2Dt6SuHVzE23ZfHDujrsamVwXL/z2qw6rzGPExfuyP8xzkrdEqIwC1CqIbuCKtU0VIhYC4RsZMLsvHG0er0ff1oL+7y97fE8dwy9efjD1Cfb8hp4mvQIuSZhhRy0G9ZblldNlA20tezsKcFDQ3k7PqXq9z4DbUCrmzZtzug8YT9Gj+1yyhIDc7BVGyZZbqPmHBl4PbpwAbwsE/+HEAyckFeET5W7UaYuazmfodByju1wWEVPYIQwDcBACIQSUJ0KVAhrRCMkdnYiosqfCaFwGurkCbMZ0wCxJfG6xshJU5NYql4/4wBA289WQN74FMvebdnIGg+yz6hG7ky1Lb8UcHsCOSUfmQYNzunThq25mwxqNazVolRVgNrozA9JHlkteYL6Xv+XIjLCqMp0i9uM8cL86FBBXS08J3WbYBnBMTbQINAw5IkslSLoHhCEsfICEN4+hBQmfSZhdP0VcQ5ObVDNXjLhaaepCxIylkNqL4zUxFOKRIjwgP8DDUp9QX3SoXxtnsc5Ppg/o/P8S9loX9DWoQzlj8WurLSpzL0J5NjnQvqEsIACnXhFIQDC5Z4/sl+wcypEyt+lZnzGLEKSoqDDudo/uOj4o1bUC7SfJ0MqBHfol7f3XPwrFcJBB97deTTnZbZK
+    properties :
+     x : 216
+     y : 301
+     width : 151
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         // Grays the button for running the tests
+         BTN_TEST_Run..State = Grayed
+         BTN_TEST_Stop..State = Active
+         
+         // Runs the tests
+         RunTest(EDT_TEST_NumberIterations)
+         
+         // Enables the button for running the tests
+         BTN_TEST_Run..State = Active
+         BTN_TEST_Stop..State = Grayed
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : LIST_TEST
+    identifier : 0x26a5faae02116313
+    internal_properties : CAAAAAgAAAAQtnFWgpcAYvY25iq+wy5C7EHAkcyqbAxUqwT32DprBdmoZ6VwHbrUHl7tq06vduOPBJ0qoUKrNK5etYhNKkqUQGTang3Hil6cuEw7qYmow0n2YwwZ/DR2j9TZhiJgjB+H9czFScv6+EnkkzbagD2OCH4Kc8rSgY7kJ1kglI4vY2xzzveINpTIhgk7TnlwpmsvhngwOtsWQq4kxLkKCqtc9G5uOvaw76S8P87B7jqTdXQROLidyVj2qqc7B3BrNNUeDJxZcI8bMblVpxZrwNnDu4U9rY9eV8tUw0lHGdkgtTdjrc62wbunNfSBrBNiFTFJxBRPVdhDC4Y6pgJU52HW5TUD2N9JLBd61XQKfloAmiGqfXo1LHCodBcgrhw7QUcK9LG2MP8Ay9rB9O7vCFhDIYTs8TzmgEncFaweLSgZZhWgWiY/G0n5q+bE+dZB+zFB1eh1BZefeXqpagOBmwFOo8Hb8fcYPGrGE7uvsQ0dasZLll93fs+3oxHNg2tTBYWOET7DPL0Ax2UqplfXZuzozcYJDXTLdEFgCXaoVOo+ov+d68xT5z4hMusIXIPSHo35qObYA5oEGy+TS0dgdzVVLF7kUvTndiQU7EvfSxSkv+Qz5jzS2JTMqOpOtSmHjwa1yPnz5lWEzemmyWFmXeSO5fu+7WbMi1gF2zUvTcdXC8A/sNAtvPw33c1Pj9JoNECCZJUE1P+7iYK9P0clFzibKs2L2X6jBJiwwmsPvUThSbJDOXGQu0ee/LkNaKtI9+zn6TW9pjKddec6CAA5/JjkC9ba/34NXdKvlJpXTqi6OEZ0+CiCoDDj/aw6HbirbVc11Ql/kIxr8ByRhWz0ex1tXnk1HGiy77+KCsnBFRiOZnO6HP/KjXt1R7rnFa5bnonQEpwMXo3iJjS8X6G7IP1QIbgKHvIvhXNkSlKeI48btSi9facukmmv2PFpC3ab2OfgYC2q3r35GK6csG8UOpSGBG7FBefs
+    properties :
+     x : 6
+     y : 331
+     width : 360
+     height : 213
+    type : 7
+    code_elements :
+     type_code : 7
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+  -
+    name : BTN_LOG_Activation
+    identifier : 0x26a5faae02126313
+    internal_properties : CAAAAAgAAADPdLG+GYQ5iURf2NRyZNAycTGPmZ9ZPqI2Nu0PpCyARomSBMxpP65rUZG31gksM6hlSFxf2oAAooPwLYttfOh3VK79cmYQztrzqdkXZlXLIcZhZ/KET3Ro6Foi1UZz2L+YUSevTIeKx0q065g/cXdznLiKYlhOOTYl522VoLpyKiX8OjV8vA776IedC8PghVguFCViXdtkpQQ3y1LeNt42T08wAOR8rrNsn7ElkGii/S1QwiCwZDvL27tUP1gKo02/GAqSsolPBPz+KDDseJwDz5pcwi3W3CQTTrW3udY01JtGni7Emb9wZ8+EGsY0pZ+2Wllu+fHwclgj3i1HzdafLKGxApxEKmCm4KWm+nFnK2u8oenjZs4/bjcOCTCfNfyWNWUl3NK2WmCsAkiHEUSQyHq7GbDEzNee8gGClHBcZ7CXyO1I/Qlx4xPefRKw9bIj2zHX7/kTOlTTS568P9TudCK+ugSLy8eoNyKIsxlnM2ygHfbKOKRnihw3Kv0kGMCOORN88G5+/Q7K8TtUWj5pmzacFD4sh9iG42EZcG0xdpSv5xfPAxUFedio5VgEX+nVA/1rk9y/Tl+O/kSwNRSGpJGRQS+FtV8vgjuPihKktrmVJaummJDHeWm9bYSAFWyZrP1zVH4ljfhT6cCT7VeCV76YS79XxCkxTO3LjvMe299/j3wEYpryg4lmsrj+YWJBIFw1TGi0i3OatPN6Ff0RgL+cQTzMOvpuE4GXzHapEnndR7DIbO0ekpP/1zFJmeQktgqIBL+LCXX6xIrCHtT9tqSUh46wibd1bT18jOe1sMySJzzXfAKxXKRoJKQN+UniyA1ufMHNNOrmnp809yto4Am0+whVLLRMxhnImzFv8CsAXGh+ZDoq7pV1ymeLr9bwrA3/e/Bte1VCGd5wJlcCS8zexQlZ97atvll/+szenqwNf4RDTpIA5nLjcwUaAp5T+Kq/5BpdeggTIyuSLsDRs4RZLS9KnpcXvrcpq5JtWrERvqcGoMZH
+    properties :
+     x : 176
+     y : 237
+     width : 140
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAAUPYg064b85wvsW8z96hiP5GoVgcDKcR7ESrBVWyLM5xCKV4Qwx9shP8FZT4YIPpM5ugALYPv43uiVdyu/PoCjzoykBdXt69vCijEzaPme1WsP9c69CTWKAKKJEjSVtqkxiv4K7cnrcGCQ0c3RFSG4qf4X0EfgtvbrG8L2+KArrYrNonO4gKM4s9z0txY+g8FQ
+        code : |1-
+         nLogOptions		is int
+         
+         
+         // Size for a log file: 10 MB
+         MaxLogSize(EDT_LOG_MaxSize)
+         
+         // Maximum number of log files
+         MaxNumberLogFiles(EDT_LOG_MaxNumberFiles)
+         
+         // Directory containing the logs
+         LogDirectory(EDT_LOG_Directory)
+         
+         // Procedure that must be run before deleting a file
+         LogBeforeDeletion("WIN_Main.BeforeDeletion")
+         
+         // Enables the logs, with the requested options
+         IF CBOX_LOG_Options[1] THEN nLogOptions += LogWLanguageFunctions
+         IF CBOX_LOG_Options[2] THEN nLogOptions += LogParameters
+         IF CBOX_LOG_Options[3] THEN nLogOptions += LogProcessOnly
+         IF CBOX_LOG_Options[4] THEN nLogOptions = LogAll
+         LogActive(nLogOptions)
+         
+         // Grays the activation button
+         BTN_LOG_Activation..State = Grayed
+         // Enables the stop button
+         BTN_LOG_Stop..State = Active
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_LOG_Stop
+    identifier : 0x26a5faae02136313
+    internal_properties : CAAAAAgAAABUJokt8jkO8UVsiyla/rGAcTsEKRK/udwVmp81ANPQrcM6piM9v61ACxVpF9TfYzLNLldf2j8Ji/hwsK2NX5EGHpSXkvO2cSMmpbBphEKRRbjg6F8BrJc8cXZH7h97n/4LcFu+5GqKlARB16oFQvQMnaZaSW5r/hnOMjlQkF9/RyBRHKd7GVi80+IquRqKp/2vwK3cp4kNn9O+hL63j6IAxddyo8NhCuyc6pq0pdGgoOu3JmwH7Lswx3Kc6lP58/wCMxDPYG3V0Q4JWs/t306yoCv0EVhota/3OAsbc4YcY3SgCFFPTyeH/Hs+RZ4ZV4RUeRPguiGK4VoILOV5rVY4EkLaYV4UVXax0END5AxqDGv6NFeyNZOo5S6HYdDVBsHQCAEi3LxqpfW6Z3B1pRQ5hJWf/Jo9a1Chl0JL1owJkfYgteGu/ZUOhbMs4+SM/7F1Q8Y9lDyXnHNaR766mRA9dpkY/mDI6hCfF72V73886CmijqkMaQIonmxajoxcgQ1HR1lVdSimk/tyWro47xzer8rOC8H3/ukdnfDjs8Z7zpeSQZgMROVZbFD5gfIn3NAMSaJrwgOgWT1TyhV19pKZtzhVAdCXmxwq05fyiTOCO8PWFvUXEFiqVeUqpn82DilDRKoG5Yw4xi+kuhoWVGSY2lL4qiTTE1rCTB5SrLYI4q2qdMr4lKQI51Nn0dnCH7oSgDlN5xTGVGI/55uT/39XM+QzpGorqxBTNa7c8UhhTA7gnQ3F1PPMBu7txF5TdsE/GPnGpvYD4E0VZW19st2yhdhmL8Sh+w5gncJxmtnTmqv/14nLG6gxrE9gAsYupGjk5FXWz0whu03Ws6ivvSUjtxx8V27aWXK8+bi+uwP6n+kMzcZQp4VtdI7PdTTPbA3xHkmgDi7lB9gRITXMjwlCVSZTM0/nOFvrST0J0eI3pujoD/QzeJr3UBNboYqw6FLGj+HRhklsH8coU73e3wY9xEc/POSsPH98wGJuhi/EUtQOvJ03/MO/i7HTK08=
+    properties :
+     x : 322
+     y : 237
+     width : 140
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADy/a6YCRbdSLeWC+4uQ4ybL8AVaZjhlBYNcz+rwfMOi4OIkM2hQYcHQsLTsfE+P7izAOvzV6Nf1t0qmHMlfq3hOqX4JdCEbQJLa7hu+/5rQ5AvUivby1cdhRdVFMrtKF8s84E1DaeYoSLLYw==
+        code : |1+
+         // Stops the logs
+         LogStop()
+         
+         // Grays the stop button
+         BTN_LOG_Stop..State = Grayed
+         // Enables the activation button
+         BTN_LOG_Activation..State = Active
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_LOG_ShowLogs
+    identifier : 0x26a5faae02146313
+    internal_properties : CAAAAAgAAABKLpK+TSQi4KxOfPbTwnoHih9lEJkzVXgsvsXFwRZ9/ltWZ3Eg9Nn1b9KnLv1ZOgS219szMV5dJOCFWVJZKYZd7LPkfr9gYq6wpWF4NPoD9lOLI03WnxSa56kk2mN/reGoIP7erL3w4ta2Eoi3UTBKrRVrKTecAgYzJY3qw/6itBZ4ujU26/vuJPefz6ZNbjStUL27VaVeY0qgiK18EQkN1hivetAvHQnoLS5WhU4o0FE8Q0zQlGtbMK/MO2iATRRyIwhimK3FPjGCrj22eWn+KPKUFT4KdPkGoKHQCQKpjBL1xl81eaz4xUp3j3UFJCNqnzKz05JH6eM1fcoymStZnBfaMsQ7XHVWNlyqjkRus9aw8adeMz3guxzngHoGuGkuJtHUqam7S8fQb028z9f53CqChtBoLDacq0L4n/WUZRrxj5uHBUbGip07GkG7BPBXU15JI++Bw6atm74TwRYJAJvav0XRBrFHuTEJdCuAl6dkYVZEJuo6QbVG+rL3ss3q3/za3bw33tp8+UTqAmDn8jw3ZjvnB+cjGLNnzbNt3HywoO64gcVTyXUPfTokOvGf769pSUEGkqSQf/tJJ7rTCdc5WjSUyktk1Z5Q9qJ3ZcdyCNh8nQeV0khNjvS/BUt48h5xnasnqHaC4FVSMa2r5QOrxchCQZxK6vXmnhWJ79MX1w3y3WQmfmooLg0m4LEYdXZY7hJni80e2O0IiSPTChv3Q+UgzZnheAPdz57uoqgK3MIP3STAaHiOzc0zv4k6HBakqvFd9srey/uyUjYjqfL1m5b/qBwjZL/wdQOGCSWZ/YqM6YGT8GGcrTAtBSg7+PRaOigSIzJO9r9VK2SP5UG2hWl6juzw8SDoiuElsJjAA+FabhDIETVD15AUFlpgikqaSdKOzWWqZ9Eywkf+FN7OAxvAAlJwEC0XEQEIMkiOdAcb5wGupGus6Ek1cXklbOHPpfsIzc3z05AeGcuFsjvnhrB9lk2Yv5mWauObt+33VvBqx0tSSi0lg4IMlv5umpQzKQlkQBVQJFzUHeslQ0vvfDKXBlkuF3dG7FmqeUfT
+    properties :
+     x : 468
+     y : 237
+     width : 140
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAABmYRKMc4I1aBOeE5aCh6RfK5j5pXxlHCah+0/TnQcG1x+YvDn9BQePHkrLUbXiN5RneBc3y4FBODs0tjEbZL9X3Eceq15SP9QxbcZEkVSVeaI5aKFpUbH/88EzstjDmi1WHb+zQ72MldY/1w==
+        code : |1-
+         // Opens the directory of logs
+         ShellExecute(EDT_LOG_Directory)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_LOG_DirectoryChoice
+    identifier : 0x26a5faae02156313
+    internal_properties : CAAAAAgAAADdyoQT/oMsCHWtrHnwJoH7n3njfPqhSg1SjAyasNZXn8C1m04zT7WzTzaqGRUsHLFEPCBloeZe3YEY9CVLEal16y50jh50phPcLtfhArsWnNlST0ludvbYq5eF+T7Gc+FgYyVAVUOAysImL53Pqro2jisimbvlJy0JBEmz7OQx8fG9SJFm+YcuITs92PS2HlxzCxDcWek5+inaDwKlHdzQ/UQ24Lbht12UPqI+38Ir6CbANjAQr2K3bSgH/WLrOm3kXxzMMMPxWUhGA7GkPoA8q8SyCQ3Y/gYf6zNmWGqIg6CEzIFn1Kb8QiuPblbF/yloFKYE2Zm4WHQwgI8G7utHI+Hih+2DEsXWxOrpyL6zb9VZknFmwiTALM6b5hL6tSm6Phg7/+/SNB38vaY9z6IdVPBigpbYLpUFGIrQEyAkFfdIjXKwbV6mgGl1Ogc0fwV8kE4iCEbCDQbe7i7hddu7YlTkfCUQ2v7j1Wm/Iw2yV/A1SE/7l5AmKaVCEFHF5k3ZCMa/wR+nOF/khOhppzCOG4wCWLryzIOp/505FffA4lqY+Jigr2OklVloWbUre8A7zw/It8n58/p01zr+sH3hyQuFU4EE1dc/nfhts6roYAT4F/Byrlj0c8zIL7HC9xX01pDYy9VlbvqeiinWGtlXYlTu6rLlAKpnhdXXadd4z6hC8NgLFM1X2Pb4AJaY4T/jSIh0iLyKgi6LMLULX/xrAf7tLGkqxRKMohyaOwe0srp/pbmlW6RGbWpnllj6sY3ECBYCxrBtps23z6TU2N2HAS1aXlZ4lQRjXdiuoZ/5vXxIDM9xl/L80BFjFX+gocIplWHDiRjIpTBOpczLrjUKg/+PR9zlddPgN41qdjs7//8l0IQ4lUzGWYVU8NE+Q7847ckv137Z0Pcv
+    properties :
+     x : 744
+     y : 199
+     width : 34
+     height : 18
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAADxw5QdB7CVwhXW81wQew6f1YfWoL7rj9c11E9yvCGJiZei0KR1rp2dNnWT2mDOs6RFyDgYJh4v4yfOjW5HGfUNBDix3LjxYSMJa58VpWNfs3Io8TBx9Ks6OSlKhY76SvlYIBTijXcytroczZY=
+        code : |1-
+         sDirectory is string
+         
+         // Choose the directory
+         sDirectory = fSelectDir("", <§$0000§>, <§$0001§>)
+         
+         // If a directory is selected
+         IF sDirectory <> "" THEN
+         	
+         	// Writes the directory in the edit control
+         	EDT_LOG_Directory = sDirectory	
+         	
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : EDT_LOG_Directory
+    identifier : 0x26a5faae02216313
+    internal_properties : CAAAAAgAAAC4Rf/PoBzKqDXEM/ZYj4yxIlimCWQv462d02B8Z+7BsURkWqbdwVP4penFvLakDBJggWrCnFhXaATszGn9nzvvsiWn5kda/dHxjGMW6U595pyfRn7gBxCkjbvr/0yC8XhPjLhgAq42PO/P1YLAGy5Ly/mVzkfaOQEttEQGjKS/+gzduE6KzeRc7KM29d1koNVzAN5e3Jf6ptO/qsI4D1GVIzGF9klROhsghr+2xJT50Tmvg57boyfJEgs3i/UWDERAFNPl53WONoZ0S7oS0yxQKIwFwkEqcie1JEyvKV7iqqUTV9aANeiaQWzAj0fIA0GUdtKti291Bsh2jPwKJj2U9jF2XXrAkcFFtsEV1yXyFyyd7lzOAzFNlH6bFA6NW57sgTKoYLRudOG5LMZJ2k8mw7D0W599crcXvw1Kd4hW03hrg+VZHwtCZGo0RGtLYukUYkNnrBoL97HcsEgeW3jK5m7wEVQwHfOIOCRSxDTyWbcbUabvN3oln75W+nPL7BFDkQogp58Snbw20dN1x9nr/EIFrq93WmL0fMPVxg+U/2/5DxqgG7Xd73EnsXaXKzuswH/8e9HimojWhXn1ClW4ciAw3+KM+YNtwgGvWNpfKLV/4w6X6MWFeloP4Dfq71vgx7yJEnHUdf0pVUwqq5XCChzo0YbJOFK8/xPbcBLh7lVr7ePgelyKXxK+lN7C/UaBod1s+Hm8b0RjM/iZh0dhNfQ1DWERcYpkWV8QMCCStiKXMFRLOxMx8i4QDOT9BNj43fMYwKodvJGas61XRP9ubZoRuNMX2mYddHDTD44XbdEhs8oieKAKKXy68OXHrvdhkIQU9KWiF6kxInw6gzBgZCdpPvpLzYFbQcxjVENKwmTfSiuxETq/Co2Ul6+4/hwwUk2blEKLz5zX8bLpECmnXhbMzLFvMbp448iHmhiwJUdw1HRlZB3aNRVgxk7vFfRdBY1KSFIMx7yW0WD4zlEbIYxdvj7ro+jzaV9LrzAz9ot5VgP2v9NjWM4FwpW63Uky1Cdgu6Sz1bDuRo+jMYfUrxCKjDSks7GtXmMSdaCHHluBQAPA1/4wrUfbcp57b3e8IHUUGiMlfPFZfWZVt7tddu3OgZdnCIfwTtzZAhOfzZ+956H/p7lwmiI5RewIW6bXI+o0aSt4U4HJ6Sz+oQ+7griykKyKyFx4Ribf3O1k2P5a2lpoorHFAMQFEQEDzCgZtM7N4MsUQNL9ZSmjmMQgO3DGiDho78cAfaTmcxVa/r7IDk7ttoWKXlblakLPAP9OpHBwsU/8jphS8SfR8iepgFND1sErw9vpp0Lnev/tinZivn0rD5k+BW/qnc8+3T6VXRjlzXGdUQIVQpzj9n7qgcBLymc8
+    properties :
+     x : 6
+     y : 197
+     width : 743
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAAA+OfrE11oFWEP+cy5S96z/28AB/RSFBC7ZgzejVU+2T3foPDnNDReP7rqbeTXiL5RXAO8/I401ND8Qoi0fYEO7qJP6J+res1BFKcJgRYDpnX7F1P01nSVrJ72v/vyv7qGSWQufr+nUXe4HLw==
+        code : |1-
+         // It is the runtime directory by default
+         MySelf = fExeDir()
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        code : |1-
+         
+        type : 17
+  -
+    name : EDT_TEST_NumberIterations
+    identifier : 0x26a5faae02166313
+    internal_properties : CAAAAAgAAADZEJfXriIDk3Nn5lolZ7YgqrNrGFjvB3fVj+6fvUkBp/BTsHZmOeTFjb+4jCJVD13SkerzrDViCRnAEk2S6hFKBCodPRD0J24b4i+QzttPK2iDH8e8CqMnbWHUEosjf1pi2v2QK9eb2AzZ2V6bU8Er0YTRlVfYXVt6MXKRGB4lyAh0XHRKrcmu0phRlBejWT1N9gJxH0l0J2nkffGYU4FQXtCmlPAzYyc6bWUVaI7VFbbBb5YQn8NyOYpk7V5MZINmWA+AK84cZ7jtyuHjPm9ah5p2W/TUvUtJwTdFeSGVKVic1wmfbNh4p86JLLwDxH1i2cJlhZ9Q/oW2UWCrRLNiilH6yi7uNxDW1UjzWkjyccCRnl3r47YvdKGCdD6ChIrYyyVmgCyxWejx/a26rjSeKdH/B2Wj4x+wupPRA7ZS9jc8KusM3jSInyHh7A6NIdmmKHXg+XgzPYdS1ldKSETMRwjZKlj7i8T6MlKnd2v+vXkmwwl7s9ExMTNutej33f6IV3MfeMdDb5RB+vuJ8KPzy/MXmgEO6sofxtUcd+7fK9OWN/V/LC9AuMMcsDsEyxrbnSehFOlwDxkMWu1TfxEod+4BUzGU42IjGCa6geFmHgHU9lE8iJAb/cvIuIJZukIokNzwCuIE0sjg1O5W5QSaNgwyOb1vXZ3HdADEut138xNcQ2RykyFd8UmqiNvDRyQI/Bv5iDWC+9hSyaaGlC99UbPJyUgJFhdmrOTZX7AaVqpZx8uCGh0932c4HWB1oovS24p5hNqpiv95Jsarfp1v9kJtJVR/waufffsXpQ08wClU9iVXWVJ7stFrc47r0FWmDXwrvt/GDzvjwiuG4ycp2I5c+KlLCkiw/d3aNra8dyR2QgB2ort0SW0s3Gs4fdb/7k89+7glXhsmvbffE4o7Q02xmkdp9U4ffDttSgrJiqL5Vvriay/atiNOJq73kXTDDyptvFApIZIGn/qlWplrR9ctCXZrt73MPpADfkQXu/hzTq8qlTF8hgB0KIzkbjn+A5O3J5KKcYta1bsj3XkjaTqUWoaZEG50xpoZV5l+94t/XXGEqgA/ZN8nbqLCRXZfCm+eGSImmaM7gfCu9z4PBRbiVReS6g9EqRzpmYjsy68m9Th9U2spdPP8e6esB4+/K/iI8C/GIem0hJaUA+YEkHi6bYIkEZHj8fRp3ZlVm9eH20CIgyrJnsZiKjzvZA3PogRzSQuncE4eQCeGTCnuUss7hkZ955TVeI4OcCZUkQuOimnRl48jLdF7HpkZ4/tfdRm9pLzXXcBa1/x3PPIHytPxt0dxvPElATzUrpAKkI+bOD6PwkN+pOHs3neT655+RGtp/+e+ER3MBTYdWY+Iksd/8j3I40IG9clqHOCc52VAnDYIEKBB
+    properties :
+     x : 6
+     y : 302
+     width : 204
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : EDT_LOG_MaxSize
+    identifier : 0x26a5faae02176313
+    internal_properties : CAAAAAgAAABVTL1nEnkwrK8ChiKR7jwOrHe9Madaa/1nL0GTNIkk5zNLxD+IvDFpJ7a/uaSSHjH/IRI17a1xw8bsmzIse+MUaZVrJiDztpox/KAErNvlL1IrfLw+M5G2tTKWlfyLL8mAk5OAC+wexvEEol94/WyK4q3KDKAYOP6e60myB3kzRA8SoB2/27rE83enStfvMKBHHXBsc63WeYehPZy46nd6Ox3ljufQZcxoIxyywB1ofV+GxPIm11j+vJgDOPIHvssQps/O0yB6OWXSjSqS2zO0cbrWcGohg2inaU/GE3+zGzq8M/9vqWQhpO1HA6ZzV2o6ykjQpk3pwijIj8PtCqYVJofLougBShE8OhNVs0vryynM/ZpegeQ43dM/EHXa7jrxkjI9y2/o7toWKbRL0gN1xz/egkoX8qlVXZhH/D2oWok0uvcwo4G4mD9X+P+nk7bAkLZeUxt3mQQsBTA/NXVgEd1LgT0xD2iAKvwKFdOcGa6SwakS6o/PRLCRXI2X1wJ6GcGYWjrK29+4MU52Mb2BR6Zmp+3BNlZX7R2/uasr3ueaOk1ZnWem9Ix2JzmLN1nAu5eeqKabsNFg5xwmSZqBgiWrlHtIphk7ET/kB7Bd61uNGAYpn0luo/VcT3ZtnmqGH+zxlY8qryfvBtemSOpwFEbrIB+AfO7GWlRLfCDHSZcXNP4b5Ts3ifXGzkWpOS/tSzrsOKLYX+9T8cbExqOn7VvMrlJ2gCKnXTCWAsr0RDp4+AQw4149mLB+NoElWQdT8EkABtis96ddyeTqOy1orNDRYNVKg6rLFsdEZkKUV+SA1r8VSTP8yNuJw514+BEXf9oQu5M8qABkXup4RjXuDde/1yKgPsbzHbdG5teFSFMA/BRL26qpR3TIadFNRHNoOTJ98DabZ8kX7C6vCLd+Xaa544tnfbNxYvF3FKDEwt/Eb70dmP/ijB5NCjpOow38J58lHJ6SmrLArCsznXPA03/cS3Fr4krpuoICezNM40+GA6ofkDlydZYjuio6as8qz/Uh6xFFGvL2r5uJIPfVRk+f9xGafy7wvVP8jy3HX0SaG6BrO5DnKILb7GCuR9IlOdof60er9+j9HJhmN06fy+M11aX7gFTt/LXYK8UEHY+CxYev+ZtWAM3r2p4pVIlnRYfZ+IMP+PhEpKf8brPwXENKI5EkOY4yO0Vcc9U1viA08OLOxXC+wR0LKeGm5uPr/viEGZ/WDz1/bL2qTdG6rQkh48LT3ucwsdTIxZtG3TckrMjpIdB8SpBSLUNTlqpVTKjIMfkmNNBzYfhcIfxLsDHRweyobrtcYBnMrKSH1OtLMJABrKJ0OCFOnnycI6RTuo4qwqqkAEwxDtu4aaYjm2A6I+kLc0maiDrGW3TfVq/oXOpc4f9FFtjLu9IccZfHMlSR7PQZP++qlWXmT1rZ
+    properties :
+     x : 6
+     y : 140
+     width : 311
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : EDT_LOG_MaxNumberFiles
+    identifier : 0x26a5faae02186313
+    internal_properties : CAAAAAgAAABs5IhDK1UgkBqKsBSWTxI3qe8eE7mKfv4HPOnDVXbmvJim6D9aR6Syq1KUqdACwZX14ObY0SWBXbED/CIjEQmnO5EUghbpeFQfp2qq3s7DpTrc1bScjwBZYwXaN9DwC0/UhLIqVwFwNcgKccYEdsFqlDZMZT5ncO0SWyBuvmh7RdtuiH1ZnIv0jTs//NoMWIPoYT+76VJRUCH2ZTgCEPyyIVzgi5euI9hvdgXLzulrciHA/hR4LVGvVx8cUY4dL46o9CZnu287ox/xav4XVDLeNO2G6ATNcOa3JtLt0JpfhVg7mPllutxB85cwvnqm3VGTeq8JnJVgRHC0OWkt9Wy5U2mebsMUomdP5tx3k5ReTiPiupsrBvZ6S9Tq48JL2PiZTYUkseAWXr+933oYEf62e5tMbTh91K16mwQv4vc8XBW0+l1BXPjh8K/ovCPQN29GMoWqhFJhcjavxOoozeeEFZERDDn7XiuuMU2/OAlS8Icy9VQOPdmgox8WlXyX9dUZa0dLRZdHA9Mkr4c2FhUlkl6dPJGPMXtO9/XaH2ooOVD4c3VvWbh2rYZGQfbGU2T8jhJOYOoM2fvAgr5uPzQfuBtIxlgB0oJcE49T2305RAcw3gAZxFZyxEbloj2fYd0Y8jmnlkZezSfqANVgY5PqFqdEIwsOrgzyjUKBHZKj+v7O5XISBHsqngWalVp+g+MVmRAjm/htjyatfbMZfAXI3vdqZhvzm9w062GT1T1xE6SNfBlXhcjIPH13fuclxW8vigcAHOyY2vpJIstIkOfKMiOCOqC2Hc9EI74rtT1u9kaJno0HbJA7j/cDrOOWBh/09KHEbODTTtWN7viQiTfduXrVLwm01kr/LOBSSvivCObE/QNISVeo7MbpuCVX/N6Ka8SI4xdwVJ6ePYhrFKBfd+foQbzZbNku24FfrBvBYx7A18VevyRa8A5xggd4daFJdA6JecKwbzkVMC4vZiUilKMyITnkFMA4s55mjS36gIowZHlnfzq7sDc7gvLWbtVpTc5MbUsMgW6QKI/zFRtqaQUVkHAcsIoHR7wYqhLwBiFwXxCyq/UUpIz1OQFj9N9Bzb9efO71dvPuYT8hkJ80Q02zct+JGezqMkH0ZzeZhaC5VkbyrH4OpKDw3gFG38OAm5UbkJYK2azwVr4uKZVERfonpiao3fficQGIiKJUyIfXDrQSkgPAcclsq94aCn+RXDq0cKLuN0oIywp5xLOVHQH+tX7MV4IOQExfDnym3UnwnVNZlXpO9lwDWSDQkl/clp2h5mvfb9RW/1qlkeNf75wVxbrbN7g5MKT10xN1MIdsDvKpi+CaTBI/hi0lR+7tEXgZYpdDNOOvWOygvMBDokQl5HEmNQokAlY9A99xmxuPBRMAf8VA7zeWCBODgEvS7kMCbkmlFPcLdvO67VmifoaapmdCvULTPTS6JV6a
+    properties :
+     x : 6
+     y : 168
+     width : 392
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : CBOX_LOG_Options
+    identifier : 0x26a5faae02196313
+    internal_properties : CAAAAAgAAACPvljC1TCp/JpD/4vtzo/GygbtH+/U1GvFYnSLDMBgRU17KZ2ZH30GE076Rw0nZMi7W0+4D032jhimCPuEqW45gFc6musVE6/As278vGJzxZ1rAiK9JbJUJyODZqzAzRrNi4gE9yvJx7wuBkwxW4OOz05P0CQxAzcukDa1mmaOHiHeMdQMi4vdF5DqGRbBxrcWMt2PrXqIEG5tnE8LjVDSubZzDFlZis/MqKXSUO3mFDffXk6k1ZXzVQ1BVIkUsL/vp9GA8UVhRzzwhEFizUsrepKLBrJ2TVjJMfEKuAQuaZeFE7KODHe1rdChcCViJJtyUYb2p06rByR68NMvZ0gRs5xuq3dDluvWS/Pj3AOnT72sTYa8dsFEUGNDTgWUo6o2SBRhkAe/HXR+xPPY9a3a4ykBQjJSKE/wBc95VrvHWmmMwZ+KQoUN4WtPMU0D1Zvqe4BgnZ4PjqZKo26V+pOVCFs9sGKr7rQOjTvY4VP5JDpxcj4E+KIwlm8EITNu4zinVQureyHG7WHuHyhGRpP51uJ8OyL4vUc2VEJt8c+RgsAQmn2NiBI05gCS5QtUebYKqqn4w5GjC4VfywDC1cZ72FWDlDfIs0idulH1EeqfoL2zpigysGMww7a89RKqGvOwjkx0qn9ZCgjNgUMPFTu5FByP3jMum/TDPRt0Orf+daP/Y3720QQ8+I7JcJaok3YooNR28cduqAB4mbwg+KweJLuFn/VSU2YJnvqLEeoY1p0ViCf4RuGweD7JUkN5xT3AXUHssDXqNfdv+RZ1I1Ah5pl5E5Ry0rqfUXq/Ww/jbS2IdZ+T2C+XR3Vqk3uhVUHQf4Z5FVnnuNL2KJ1W4CbbVfEbJ0uzNuFC54GjXJZ5bPVkFmUIQ5KHtOLg0qLKKc/HeWYEwQQ5dhUTDFA00ri2BvBtx9hotQc/8eKDxR+Ig7w6olBkzzdUwnz6dvKnoiWiKFXyVBMWPW20FWq4aYYFNxMY71D9OIYhHngr4QDAylyG/p5ilIqgKTr09Y9sC8Iw0Szj996Li/SpkHgofNqwlxrfLPPmY4heZPkJ/qSz07fIlJCvAh+LZDT+JRzACs4ZR8K8VZtsk3w4+immTB1FDHtoWscwnDl00qrtwoX9lxFrv4DgL69br6341f5D4tZY9k7Vo6si3y+fleYDYjdb8h3uc25p
+    properties :
+     x : 6
+     y : 96
+     width : 772
+     height : 39
+    options :
+     -
+       internal_properties : CAAAAAgAAADP4/dVhyS6IaB4h4QSku7T74s3RJo2ngvyCpmTFnkfl4KwgSgs1kixFo6mijze+yjWCPqEwSOC4INVinOfVPYAwBHyTt/WunLPIj15tK1dER/F0lPbwLSeagfWnXCwVLqNMXUPhhNdona8FOKoCEEv3TLhuj0/9gMSvzhBjUPCK/GfQRUjXTfwT8NN
+     -
+       internal_properties : CAAAAAgAAADGlRaPRVtelzkM0h8bfgFMEWS+HL2kQuoQcuvhGE3Hw6EgPJRTNInS5kxtb4dSE6BLaI7x0BiQRxqhC2B6+cVe+PVjKQJdD/ptdZYAV/BEr3uO4eZa5cNQguThqOfr9+Qp9QMV0DuzQ+2WCtZEM46vy2Ol9StWBy/aPs7cqYcMeenLQw==
+     -
+       internal_properties : CAAAAAgAAADLEo7c/NBlcXP6YQD9udZWNvU30jgAQhusg5hNTRqiWnsAzhNjVD0to90DQg21LYvHWs6jlsGTLZxYJHrEtBbTaO56qM7OIfgFDPGBe12UqhUyejU8NqtsqNHkqROo8yv532h6hIhpOTUnxZw3/91VCuB+g0Sb0JBNLmbjB2EVOB07wqU=
+     -
+       internal_properties : CAAAAAgAAAA5MMQ1JJBCmbt5upLnnJcDJ8vFlbQCUR9+o6vKPM5X6SJYnpCFHeYt5kNKMxOEFognLVBLflJ2FEcPU8FLEi8caH/r8S5TPfegi0ZSfcYCRLBUHfjgqauV/Z5rYAMLM1swRRkH3psJUCjCfrYWt8oiupzAqRyLFnEZFCw=
+    type : 5
+    controls : []
+    code_elements :
+     type_code : 5
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAABqFRbwTZ5NqMdme4buM4TbLzhdMdCh3O4lu/fLqdt+Q5uocL2hGTfXkhITKfEed0hzaBP7j//DQmHW9J8JitG1ViEEEfwg4f5fNzSKL7pvh2yLzvdHN6v5ucPhwD6ZTLPor+3xGcOAidoz2w==
+        code : |1-
+         // Everything is logged by default
+         CBOX_LOG_Options[4] = True
+         
+         // Modification process
+         ExecuteProcess(CBOX_LOG_Options, trtChange)
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        code : |1-
+         // If "LogAll" is checked
+         IF CBOX_LOG_Options[4] = True THEN
+         	
+         	// Grays the other options
+         	CBOX_LOG_Options[1]..State = Grayed
+         	CBOX_LOG_Options[2]..State = Grayed
+         	CBOX_LOG_Options[3]..State = Grayed
+         	
+         	// Switches the options to False
+         	CBOX_LOG_Options[1] = False
+         	CBOX_LOG_Options[2] = False
+         	CBOX_LOG_Options[3] = False
+         	
+         ELSE
+         	
+         	// Enables the options
+         	CBOX_LOG_Options[1]..State = Active
+         	CBOX_LOG_Options[2]..State = Active
+         	CBOX_LOG_Options[3]..State = Active
+         	
+         END
+        type : 17
+  -
+    name : STC_Static1
+    identifier : 0x26a5faae021e6313
+    internal_properties : CAAAAAgAAAD91OU3LWPa1Hlawe3Enml2GVmHigIE2voXWv1zN6++Rj9IAiEgAagUZ0Ays53s1dEwt2iiS08ehjiZ16SavZenhP21C5M9t14Yj08bMO1gXQyQPBGxuo3y3arTuiTNyG+7HQwtI2SIxZ8vdvq07Tv5lNZ8VFLo45GvOZntAegsJ9S0NLQASQ2VNakd/FEs46mfIkmJiJ9Awn7Lwt3j0Nonnk8ig8W/QyFeff34RFiaTMAGgHrkGnUe2RuC1mKoRB1ZiQbde24PH/GT4Mhtz7tIkzGuAP5KW+RqEN9X+kaNfM6gIDKF4ehmHh+DT9iXGlgcAfa4N5pZiKLN2MsPa0zLzXb732KPqiPHbOCbOwMs+2ACNpBSWAgbBtwQHONxuhmZK0nJQhwPFzk10ZzDzw+wotNrFvBPujPc5Z5trCgkU9Nq7bKH0LNNwnsSe/l27tISmAsRGhDoiTIMSA2x203fyVbfmXPLT6mmD9GmV4tYNmLQJyoGJ1C5YanM4BfMLipChLJK3nRxwzA7JWrHjimYdn5dPu1CYMLGWAfFzuKyyQ7ENP+s6Ld2+T0qd+OtBdHbBV+JuZrq9lfWkdyVXW5x08PWHfTdgue11sJJcPFGPn/NApepUreOhvh7hkDFB8XOLgCKhGPjpCxeAbrl39QHy5Vvlu8TqH1DO0fh3ZHrVYGRPSDIHHYocdTtY4iqKqyidnsEiJS1WcZ9zNO1uv+Ti7jxelprR255SwJ3VJNtNIL2l13tFgwBDqq2MQbwCg==
+    properties :
+     x : 6
+     y : 6
+     width : 772
+     height : 61
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_LOG
+    identifier : 0x26a5faae021f6313
+    internal_properties : CAAAAAgAAADwK954t3iQhoIaW6O729QgfhnRhpQuHQfXybpZ5BaPsW+ibx0RXi40RKcRlCmgr+x1N8tEd4Mbmlq90O60JYMb53J0Es83CTECRlQjNxTcPZPqs3iuOWQtNcAfJIIxRBD7nA6CO6dGFl8b5koNz4MV8nzGGqGOnz9maLyMlyB5fyzgcImS8wj7HrOuAJcRSTA+aQFjJw1VfD9K00BZD/j1+55U/3fBq5dVJb9w7jdS4QE57VR5hcYjCpQFnAM23U+au6liwJAHgDB1u78pbwHg/BA/PikIVgeEXU0FVgU/NQNUYAtdCjrvXwmyuWKEXy83CBLYEpT38Lh+E83YJuxiLxX5BPXB0M5pu0Yb94LeYEmOr2C/MK3jREaHwVhR4HfRQoP4u5HnvWniFIMUWi8++JZVHs8g80zVxBx8L5LM/pWFz5n2HyqsjnJ/Rln6X/h4vnm2G9gd7QZ/TunTlA2SG/nbqnbp1/JnQTIXJv0VDNSKGJz9Jk54oVdLDPecgCCGYXnOE2AcRZKI0YnjLBNeXdpJ0X6WGhSuB09ulZOwdxP5J6KeXCogHNFp
+    properties :
+     x : 6
+     y : 73
+     width : 772
+     height : 17
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_TEST
+    identifier : 0x26a5faae02206313
+    internal_properties : CAAAAAgAAAB3+d5xGyB1JG3ak2G/XdrXf+83ca8dev/ms8YKkBpf3h2CozH2GhO2xaw4gNBwndpKgony9Mv8Go4/iTLB5maV+wrT/WSTVOUyH2+SfsOvEBu7TWWL2aeICq+h8l+IBAYFfdtYdc5X9ZIjF8cW+F4mY+ni9kZ4pFxTx6S+NRj23YztXS5nD8vI7js5Q4onf1zBKM7kXKyuWdJ0mazkD8o3EfjMsfNL5w1vFp514NrQz2tmNjYP1f2+fVDeSXfe3ZOTINaRYctkdSrtiSBL+q9bmpoqv+HJaW0MQeDYyyCjsC0zB4ofmvCVp1/OqdviKlYpHYvUOSg9EsmQWzDal9dDhOEjzBCiGteLB151I28JFv5/kAS3iCQp9dXLdJTaGQLS4OomUfUVrrJiuZbkfEcp+EzI1PKVDwxINGF8OAm1OnX+Y/RD16Sf6jDn9JaBHrH+UCgSeZYAyV2hnIvzF+ioMmfaoFNVNx9xvbilxgVXHsW9uYZNrgkt1w==
+    properties :
+     x : 6
+     y : 279
+     width : 772
+     height : 17
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAAA358zca8ePJOMCANeVIsObItIot3RQmjrzm1jDpiBfJE+DQR96xYqsDqr7Nzgc3EeJqKQzurwT/gZILINL4DlNUKLIGTBb13vVqPL10o2hilXNck7Kur/o15FiIpy5YhokrETDa4dYP59eG4njp55zbMFfp4l5l59nI/xqAq7BblBj0GiPC4w=
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE WIN_Main()
+      
+      gbSimulation is boolean	// TRUE if simulation mode, FALSE otherwise
+   -
+     code : |1+
+      
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      
+      
+     type : 2
+   -
+     code : |1+
+      
+      
+     type : 11
+   -
+     code : |1+
+      
+      
+     type : 12
+   -
+     code : |1+
+      
+      
+     type : 17
+   -
+     code : |1+
+      
+      
+     type : 13
+  procedures :
+   -
+     name : _ProcessString
+     procedure_id : 1631986065240908563
+     type_code : 14
+     code : |1-
+      // Summary: Performs a random process on the strings
+      // Syntax:
+      //_ProcessString (<sDay> is string, <sMonth> is string)
+      //
+      // Parameters:
+      //	sDay (ANSI string): String corresponding to a day
+      //	sMonth (ANSI string): String corresponding to a month
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE PRIVATE _ProcessString(LOCAL sDay is string, LOCAL sMonth is string)
+      
+      
+      // Browse the characters of "Day"
+      FOR i = 1 _TO_ Length(sDay)
+      	
+      	// Adds the character
+      	sMonth = sDay[[i]] + sMonth
+      	
+      	// Displays an information in the list
+      	DisplaysInList(StringBuild("Process on string: %1", sMonth))
+      	
+      END
+     type : 458752
+   -
+     name : _ProcessNumber
+     procedure_id : 1631986065240974099
+     type_code : 14
+     code : |1-
+      // Summary: Performs different processes on a number 
+      // Syntax:
+      //_ProcessNumber (<nNumber> is int)
+      //
+      // Parameters:
+      //	nNumber (integer): Number for test
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE PRIVATE _ProcessNumber(LOCAL nNumber is int)
+      
+      sDay is string
+      sMonth is string
+      nPower is unsigned int 
+      
+      
+      FOR j = 1 TO 3
+      	
+      	// Stores the corresponding day
+      	sDay = IntegerToDayInAlpha(modulo(nNumber,7) + 1)
+      	DisplaysInList(StringBuild("Conversion in day: %1", sDay))
+      	
+      	// Stores the corresponding month
+      	sMonth = IntegerToMonthInAlpha(modulo(nNumber,12) + 1)
+      	DisplaysInList(StringBuild("Conversion in month: %1",sMonth))
+      	
+      	// Raise the number to a given power
+      	FOR i = 1 TO 5
+      		nPower = Power(nNumber,i)
+      		DisplaysInList(StringBuild("Raised to the power of %1: %2",i, nPower))
+      	END
+      	
+      	// Performs a process on the "sDay" and "sMonth" strings
+      	_ProcessString(sDay, sMonth)
+      	
+      	// Empty process
+      	_EmptyProcess(RepeatString(sDay + sMonth + nNumber + nPower,2))
+      	
+      END
+     type : 458752
+   -
+     name : _EmptyProcess
+     procedure_id : 1631986065241039635
+     type_code : 14
+     code : |1-
+      // Summary: Empty process
+      // Syntax:
+      //[ <Result> = ] _EmptyProcess (<sParameterString> is string)
+      //
+      // Parameters:
+      //	sParameterString (ANSI string): String in parameter
+      // Return value:
+      // 	ANSI string: Returns the initial string
+      //
+      PROCEDURE PRIVATE _EmptyProcess(LOCAL sParameterString is string)
+      
+      
+      RESULT sParameterString
+     type : 458752
+   -
+     name : DisplaysInList
+     procedure_id : 1631986065241105171
+     type_code : 14
+     code : |1-
+      // Summary: Displays an information in the list
+      // Syntax:
+      //DisplaysInList (<sString> is string)
+      //
+      // Parameters:
+      //	sString (ANSI string): String to display
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE DisplaysInList(LOCAL sString is string)
+      
+      
+      // Adds the string to the list
+      ListAdd(LIST_TEST,sString)
+      
+      // Displays the last added row
+      ListSelectPlus(LIST_TEST, LIST_TEST..Count)
+     type : 458752
+   -
+     name : BeforeDeletion
+     procedure_id : 1631986065241170707
+     type_code : 14
+     code : |1-
+      // Summary: Process performed before deleting a log file
+      // Syntax:
+      //BeforeDeletion (<sLogFile> is string)
+      //
+      // Parameters:
+      //	sLogFile (ANSI string): Log file that will be deleted
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE BeforeDeletion(LOCAL sLogFile is string)
+      
+      
+      // Adds the file into the list of deleted files
+      ListAdd(LIST_LOG_DeletedFiles, fExtractPath(sLogFile, fFileName+fExtension))
+     type : 458752
+   -
+     name : RunTest
+     internal_properties : CAAAAAgAAABY0O2h3P85p2bxzBZ/Yhuk8ybF6/TND0c4KCY+Pe8k8Qq6fs4nlnaKfuzfjFg3KZucfQdab4nzjpuuWC7K9jjSE59kcTI5z4sY92dLNSeJwQCzPF05fGF+GL2IbinKVHmbegFD+JuPuPol0FNS1CtO2Z8T3ijBZHtin/5Eo4tZhNcJuTs4dZ4L54xulguPlm0hWXzJIJSiWBnwBvzn0kzU5iJKhp47
+     procedure_id : 1631986065241236243
+     type_code : 14
+     code : |1-
+      // Summary: Simulates the execution of a process for test
+      // Syntax:
+      //RunTest ( [<nNbIterations> is int])
+      //
+      // Parameters:
+      //	nNbIterations (integer - default value=1): Number of test iterations to perform
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE RunTest(LOCAL nNbIterations is int = 1)
+      
+      // We are in simulation mode
+      gbSimulation = True
+      
+      // Enables the hourglass
+      HourGlass(True)
+      
+      // For each iteration
+      FOR i = 1 _TO_ nNbIterations
+      	
+      	// Process on the number
+      	_ProcessNumber(i)
+      	
+      	// Check the logs
+      	LogCheck()
+      	
+      	// Displays the list of .wlog files every 10 files
+      	IF modulo(i, 10) = 0 THEN
+      		ListLogFiles()
+      	END
+      	
+      	// Refresh
+      	Multitask(-2)
+      	
+      	// Exit from the loop if the simulation mode was stopped
+      	IF gbSimulation = False THEN BREAK
+      	
+      END
+      
+      // End of simulation mode
+      gbSimulation = False
+      
+      // Disable the hourglass
+      HourGlass(False)
+     type : 458752
+   -
+     name : ListLogFiles
+     internal_properties : CAAAAAgAAABF1rHtvxh4tU2aamBOGolSaA5dzWJ69luRy/zleaBjv8KuuYmrs0dVJzjSswplcddE2Tbpe3yUKVg0hd5REFXI82jxgdEkxv8hd0UgLsie2UvAAHhgJZMxBGvEF37WqOFjfvBPsfe/FEVWHH67pEtKz9HkUGOJUlUv/oLt4oVbhpWUny3PPkDKcf1DChopZ0It3V2ZPdO5rd0aQ7Arx1031/zzoIaJnrwy4Ir7aciCMPgbKB8=
+     procedure_id : 1631986065241301779
+     type_code : 14
+     code : |1-
+      // Summary: Lists the log files (.wlog file)
+      // Syntax:
+      //ListLogFiles ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE ListLogFiles()
+      
+      sListLogFiles is string
+      sALogFile is string
+      
+      
+      // Clears the list
+      ListDeleteAll(LIST_LOG_Files)
+      
+      // Lists the .wlog files
+      sListLogFiles = fListFile(EDT_LOG_Directory +["\"] + "*.wlog")
+      
+      // Browse the files 
+      FOR EACH string sALogFile of sListLogFiles separee by CR
+      	
+      	// Adds the file to the list
+      	ListAdd(LIST_LOG_Files, fExtractPath(sALogFile,fFileName+fExtension) +TAB+ TimeToString(fTime(sALogFile),"HH:MM:SS") +TAB+ LengthToString(fSize(sALogFile)) + gLink(sALogFile) )
+      	
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAAspXRQsX4kpYpRJzI8SMGEUfXYJhQeqig0H9mPZLI9hoPnkeFEnSQ8t7JVd8VUY9eLyST/2DyAYB+9rK7lbHVOclfSdkhgAQ9dNjlmStKMpPl9
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x10587b1501158519
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+  strings :
+   -
+     text :
+      en-GB : Select a directory...
+     index : 0
+   -
+     text :
+      en-GB : Choose the directory that will contain the runtime logs (.wlog files)
+     index : 1
+ dialogs :
+  -
+    identifier : 0x17fb22ea00371b2d
+    internal_properties : CAAAAAgAAADKt/QbFCi7/d+BPwplrM1Knp2+ivW4yFKWIqFi2h0jFdC6N6zNNBGOmh4Fgon5/iI3kkuYRrAu2+KN0dMW1Wk8PC2fmqVz4yI=
+    label :
+     fr-FR : Arrêter la simulation ?
+     en-GB : Stop the simulation?
+    image : {}
+    cancel_button : 1
+    buttons :
+     -
+       label :
+        fr-FR : "&Arrêter"
+        en-GB : "&Stop"
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : "&Ne pas arrêter"
+        en-GB : "&Don't stop"
+       image : {}
+       value : 2
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_Main.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

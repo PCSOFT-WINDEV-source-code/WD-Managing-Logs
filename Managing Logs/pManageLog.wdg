@@ -1,0 +1,332 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pManageLog
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x16a5faae012764a9
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAABPOo5wfzL5PtlmH9g6pVlcqG1md+uM4GM8B/k/aVja5R6ZseBzxTGWZbo12UeE8bWym5Rl91AKrNq9wTYnFyamg2lAMw==
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACGCxR7cGw59eRabWWqw+KiyVb5KVTvh9Z2GUiy5M/sMDi6i+5fcMad01OPeld0Qb+0MzR920CIz6mIWPG05tAltfcQcTmyUkg4oOmlx5v/FixMpM/MxT9EqeYBfs1yo9eKF68+2L9HIlPJQd1SHMi8zO364PxC5liwDfpQ+fuuAZP6WythxOVUJJxGR4VKzNrapN7X4QekKY1iaDnK5Q54K/2ccoqpDcuoUR/DqAfPnrnIa9Vh
+     code : |1+
+      // Global variables of the set
+      PRIVATE
+      gbLogEnabled is boolean // Indicates whether the management of logs is enabled
+      gnNbFiles is int = -1 // Number of log files managed
+      gnMaxFileSize is int = -1 // Maximum size for a log file
+      garrLogFiles is array of 0 strings // List of log files
+      gnOptions is int // Log options (defines the elements that must be stored in the file)
+      gsLogDirectory is string = fExeDir() // Directory containing the log files
+      gsCB_BeforeDel is string // CallBack procedure called on a wlog file before its deletion
+     type : 720896
+  procedures :
+   -
+     name : MaxLogSize
+     procedure_id : 1631986065242350761
+     type_code : 15
+     code : |1-
+      // Summary: Defines the maximum size for a log file
+      // Syntax:
+      //MaxLogSize (<nSize>)
+      //
+      // Parameters:
+      //	nSize: Maximum size of a log file (in Mega Bytes)
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE MaxLogSize(nSize)
+      
+      // Multiplies the size given in parameter by 1024 *1024 to get the size in bytes
+      gnMaxFileSize = nSize * 1024 * 1024
+     type : 458752
+   -
+     name : MaxNumberLogFiles
+     internal_properties : CAAAAAgAAADqhY8coMSlTKv1z4xUUQE6lfdIX3jb7ynoNo0xNfa0JvwMeNgMBsJFVJ10YW6Jt+HvmGQqbPKt9MZvVL6ybMZSfTTJiaLUOupTkPq1PaLjSbyu8bTDezYxjHuBtj1fEVjgq6Es8jb+jdL/Pxcgl9zpZL7RVYxQH6AqAR0Iw6RI8dLga4RKGkHAW/qBXvMkLbFHjZ1Jz/recEAV+JEqkMSy5FxnEA==
+     procedure_id : 1631986065242416297
+     type_code : 15
+     code : |1-
+      // Summary: Defines the number of log files that will be managed
+      // Syntax:
+      //MaxNumberLogFiles ([<nMaxNbFiles> is int])
+      //
+      // Parameters:
+      //	nMaxNbFiles (integer - default value=-1): Maximum number of log files that will be managed
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE MaxNumberLogFiles(LOCAL nMaxNbFiles is int = -1)
+      
+      // If the number of log files is set to -1: 
+      // no limit, all the files will be stored
+      IF nMaxNbFiles = -1 THEN
+      	
+      	// Stores that the number of files is unlimited
+      	gnNbFiles = -1
+      	
+      ELSE // If a number of files is defined
+      	
+      	// At least 1 file is managed
+      	gnNbFiles = Max(nMaxNbFiles, 1)	
+      	
+      END
+     type : 458752
+   -
+     name : LogActive
+     internal_properties : CAAAAAgAAACc+137lVIiwc+8jULWfOqubutcoGwyY4JA5U1iFZKH/bC5LTC2i4ravTqm+Av3W/LS9oBid4f4b77/igjeImGs5Tk/2sGfQZr1zXGBN37lSvd4p+U6twQOhAkPXAlWnnBvK+uFts+T95Te+YmhlOW7xRD9COYL1kZQrFsEMheT0UIwfUDlW1cUU3Jl/E+ifB60U0ViXcCoZ38zKfq85JA7fDt0cL2tqpnjuo+oH/vwc7iieeTKi3XVxLpJzWMRaw==
+     procedure_id : 1631986065242481833
+     type_code : 15
+     code : |1-
+      // Summary: Enables the management of the runtime logs
+      // Syntax:
+      //LogActive ([<nOptions> is int])
+      //
+      // Parameters:
+      //	nOptions (integer - default value=131073): Options of the runtime log. See the constants associated with dbgEnableLog.
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE LogActive(LOCAL nOptions is int = LogEnabled + LogWLanguageFunctions)
+      
+      sNameLogFile is string
+      
+      
+      // Builds the name of the log file
+      sNameLogFile = gsLogDirectory +["\"]+ DateSys() + "_" + TimeSys() + ".wlog"
+      
+      // Inserts the element into the array of log files
+      ArrayInsert(garrLogFiles, 1, sNameLogFile)
+      
+      // Checks whether the previous logs must be deleted
+      _DeletePreviousLogs()
+      
+      // Saves the options of the log
+      gnOptions = nOptions
+      
+      // Enables the log
+      gbLogEnabled = dbgEnableLog(sNameLogFile, gnOptions)
+      
+      // If the status is not active (LogEnabled not found in gnOptions), enables the log
+      IF dbgLogStatus() <> LogEnabled THEN 
+      	dbgLogStatus(LogEnabled)
+      END
+     type : 458752
+   -
+     name : _DeletePreviousLogs
+     internal_properties : CAAAAAgAAABQQ/8npe0wWuhz6FBcvQ+JQx8s+u/3ClpTUQsN6WLnG8GubNYj0AR/wls1h+Izp2XiPXq+QlSJKAEiF1k9KhhedR5NiFNxLaa52umd3p77WQyxwR3vST6gdFFLAaxg08P3Dm1/imDqUErNlUDVSuEleol7PhkdWN6mGWCOEW62/WY2Qk+vLJH8dIs2dJA29KVkPgW5HAYO1900qH7G6EfU
+     procedure_id : 1631986065242547369
+     type_code : 15
+     code : |1-
+      // Summary: Deletes the previous logs
+      // Syntax:
+      //[ <Result> = ] _DeletePreviousLogs ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	boolean: TRUE if the deletion is effective, FALSE otherwise
+      //
+      // Automatic process of errors: RETURN FALSE
+      //
+      
+      PROCEDURE PRIVATE _DeletePreviousLogs()
+      
+      nNbFiles is int // Number of files currently managed
+      nNbAttempts is int // Number of deletion attempts
+      
+      
+      // Do we have to keep all the files?
+      IF gnNbFiles = -1 THEN RESULT True
+      
+      // Stores the subscript for the end of array
+      nNbFiles = Dimension(garrLogFiles)
+      // Browsing the array elements
+      WHILE nNbFiles > gnNbFiles
+      	
+      	// If a CB procedure is defined
+      	IF gsCB_BeforeDel <> "" THEN
+      		
+      		// Runs this procedure by passing the full path of the log file in parameter
+      		Execute(gsCB_BeforeDel, garrLogFiles[nNbFiles])
+      		
+      	END
+      	
+      	// Tries to physically delete the log file
+      	IF fDelete(garrLogFiles[nNbFiles],frReadOnly) THEN
+      		
+      		// Deletes the file from the array
+      		ArrayDelete(garrLogFiles,nNbFiles)	
+      		// Decrements the number of files (current subscript)
+      		nNbFiles--
+      		// Reset the number of deletion attempts
+      		nNbAttempts = 0
+      		
+      	ELSE
+      		
+      		// Increments the number of deletion attempts that failed
+      		nNbAttempts++
+      		
+      	END
+      	
+      	// If more than three deletion attempts have failed
+      	IF nNbAttempts > 3 THEN
+      		
+      		// The deletion is not effective
+      		RESULT False
+      		
+      	END
+      	
+      END
+      
+      // The deletion was performed
+      RESULT True
+     type : 458752
+   -
+     name : LogCheck
+     internal_properties : CAAAAAgAAAB1zy5k7+WeiqkVMwlETLXYtRgUtCPsiDdk3gTLb6wATMs0eGxNHv+OTb9uwqBkNRrIQmJWoRmpH9AyOYchB/UkiRboNhwwD9DwhWBOlwhtc4towTLMgVlhLOM7JPBXeHz/cP18b3zdpv33fytbexPfvWklq/N6oPezKXn2TAYfb4+IaMplZw4k2XaOPyqKsb3hbvEx3jN0ugwKj2ByxcIHxL4kWRSkjyD4v/WknfGzxn1K5g==
+     procedure_id : 1631986065242612905
+     type_code : 15
+     code : |1-
+      // Summary: Checks the current logs
+      // Syntax:
+      //LogCheck ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE LogCheck()
+      
+      nFileSize is int
+      
+      
+      // Is the management of logs enabled?
+      IF gbLogEnabled = False THEN
+      	// No management: exit from the procedure
+      	RETURN
+      END
+      
+      // Was a maximum size defined?
+      IF gnMaxFileSize = -1 THEN
+      	// No maximum size: exit from the procedure
+      	RETURN
+      END
+      
+      // Pauses the current log: to avoid logging the following process
+      dbgLogStatus(LogPause)
+      
+      
+      // Retrieve the size of the file
+      nFileSize = fSize(garrLogFiles[1])
+      // Is the file size greater than the maximum size that was defined?
+      IF nFileSize > gnMaxFileSize THEN
+      	
+      	// Stops the log
+      	dbgLogStatus(LogDisabled)
+      	
+      	// Restarts the log with the same options
+      	LogActive(gnOptions)
+      	
+      ELSE
+      	
+      	// Restarts the log
+      	dbgLogStatus(LogEnabled)
+      	
+      END
+     type : 458752
+   -
+     name : LogStop
+     internal_properties : CAAAAAgAAACiIublgkyQxyWqfO/FdA3qSvv5G/h6sDZEryz3SXSC0t3DIhcarlQPmmk6S9CGAqtwuuJ0VQM+qRgvNsA4LiywLjfSwAx4chJPk58MxFPFR+7YkwyRl8q2WMGdbFYjsEizy1fmxct0uOJmBQezhaVSK7xFwcW/vemEjqGYOjTVzj5wUZsK6wCDHVB/glHLEkkMA6n9VsrP8qd/ofgmJT6INkJn7LM0cN/glcZhTM2d83vWSaeTDwiMfkoVYYGYSbKl
+     procedure_id : 1631986065242678441
+     type_code : 15
+     code : |1-
+      // Summary: Stops the management of the logs
+      // Syntax:
+      // LogStop ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE LogStop()
+      
+      
+      // If the management of the logs is enabled
+      IF gbLogEnabled THEN
+      	
+      	// Stops the logs
+      	dbgLogStatus(LogDisabled)
+      	
+      	// The management of the logs is not enabled anymore
+      	gbLogEnabled = False
+      	
+      END
+     type : 458752
+   -
+     name : LogDirectory
+     internal_properties : CAAAAAgAAAByG29+cMwxvOamGZH4NIc4B/Ljl8CC0y2CYOl/tzACJFJmMqzs5u7h1iegt/Q3fa+NSm7WdOo5cFS1HGhcCugsO+53Qa4IFlItQlrP/1AF8zY0QH/Qdi1eOfAIMXbWyqerpqwzs0Xx/hNgnvLRvrE8Q408/LV/Uo2Xnhg3ELcZIGVj+lcf/Tj5kN9kvdCHvyUB3kvP/bxfJXQFXaHyJKBuCg7/iA==
+     procedure_id : 1631986065242743977
+     type_code : 15
+     code : |1-
+      // Summary: Defines the directory where the log files will be stored
+      // Syntax:
+      //LogDirectory ([<sDirectory> is string])
+      //
+      // Parameters:
+      //	sDirectory (ANSI string): Directory containing the log files
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE LogDirectory(LOCAL sDirectory is string = fExeDir())
+      
+      
+      // Stores the log directory
+      gsLogDirectory = sDirectory
+     type : 458752
+   -
+     name : LogBeforeDeletion
+     procedure_id : 1631986065242809513
+     type_code : 15
+     code : |1-
+      // Summary: Defines a CB procedure called before the deletion of a log file
+      // Syntax:
+      //LogBeforeDeletion (<sCBProcedure> is string)
+      //
+      // Parameters:
+      //	sCBProcedure (ANSI string): CallBack procedure to call
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE LogBeforeDeletion(LOCAL sCBProcedure is string)
+      
+      
+      // Stores the CB procedure that must be called before the deletion of a log file
+      gsCB_BeforeDel = sCBProcedure
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x17b2eb840619ef62
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
